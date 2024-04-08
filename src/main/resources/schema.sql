@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS agreement
 
 ALTER TABLE agreement
 ADD FOREIGN KEY (product_id) REFERENCES tpp_product (id);
-
+/*
 INSERT INTO tpp_ref_account_type (value)
 VALUES ('Клиентский'),
        ('Внутрибанковский');
@@ -173,4 +173,4 @@ INSERT INTO account(account_pool_id, account_number, bussy)
 SELECT id, '4534352543276345', false
 FROM account_pool
 WHERE registry_type_code = '02.001.005_45343_CoDowFF';
-
+*/
